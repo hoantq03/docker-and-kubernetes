@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t qhoan03/docker-and-kubernetes -f Dockerfile.dev .
+  - docker build -t  hoantq03/docker-and-kubernetes -f Dockerfile.dev .
 
 script:
-  - docker run qhoan03/docker-and-kubernetes npm run test -- --coverage
+  - docker run  hoantq03/docker-and-kubernetes npm run test -- --coverage
